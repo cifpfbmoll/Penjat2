@@ -12,4 +12,9 @@ class PuntuacioTest {
         assertEquals("err", puntuacio.getParaulaSecretaDificultat(4), "Ha hagut un error, s'esperava: err");
     }
 
+    @Test
+    void getParaulaSecretaDificultatNumeroNegatiu() {
+        assertEquals("err", puntuacio.getParaulaSecretaDificultat(-1), "Ha hagut un error, s'esperava: err");
+    }
+
 }
